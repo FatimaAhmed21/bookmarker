@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <<<BOOTSTRAP FILE>>> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- <<<FONT-AWESOME FILE>>> -->
+    <link rel="stylesheet" href="css/font-awesome.all.min.css" />
+    <!-- <<<CSS FILE>>> -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Bookmarker</title>
+  </head>
+  <body>
+    <div class="container py-5">
+      <div class="main-header text-center">
+        <h1 class="position-relative">Bookmarker</h1>
+      </div>
+      <div class="inputs  my-5 pt-5 pb-4">
+        <p class="fw-bold text-center">
+            <i class="fa-solid fa-bookmark"></i>
+            Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+        </p>
+          <label for="bookName" class="fw-bold">
+              <i class="fa-solid fa-book-bookmark me-2"></i>
+              Site Name</label>
+              <input type="text" class="form-control mt-2" id="bookName" placeholder="Bookmark Name">
+              <label for="bookURL" class="mt-4 fw-bold">
+              <i class="fa-solid fa-link me-2"></i>
+              Site URL</label>
+              <input type="text" class="form-control mt-2" id="bookURL" placeholder="Website URL">
+              <button onclick="addBook()" id="submitBtn" class="border-0 rounded-1 mt-4 d-block m-auto">submit</button>
+      </div>
+      <div class="output mt-5">
+        <table class="table bg-white text-center">
+  <thead>
+      <tr class="py-3">
+      <th>Index</th>
+      <th>Website Name</th>
+      <th>Visit</th>
+      <th>Delete</th>
+      </tr>
+  </thead>
+  <tbody id="tbody">
+    
+  </tbody>
+</table>
+      </div>
+    </div>
+    <!-- <<<JS FILE>>> -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
